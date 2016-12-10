@@ -1,0 +1,5 @@
+<% provide(:page_title, 'New Post')%>
+<% provide(:authors, 'active')%>
+
+<%= render 'form', post: @post, url: authors_posts_url %>
+<%= link_to 'Back', authors_posts_path %>
